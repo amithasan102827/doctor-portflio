@@ -83,13 +83,23 @@ body {
   /* font-family: var(--bs-body-font-family); */
   font-family: var(--paragraph-font-family);
   font-size: var(--body-font-size);
-  /* height: 100%; */
-
 }
 
 
+hr {
+  height: 3px;
+  width: 10%;
+  margin: 0 auto !important;
+  border-width: 0;
+  color: #424042;
+  background-color: #424042;
+}
 
 /* APPOINTMET-SECTION */
+.navbar {
+  background-color: var(--appointment-background);
+}
+
 .navbar-brand {
   display: flex;
   justify-content: center;
@@ -139,6 +149,7 @@ body {
 .header-banner {
   background-color: var(--banner-backgroundr);
   padding-top: 90px;
+  margin-top: 79px;
 }
 
 .prof-title {
@@ -164,6 +175,10 @@ body {
 
 }
 
+.banner-icon {
+  margin-top: 70px;
+}
+
 /* Biography section */
 .biography-container {
   overflow-x: hidden;
@@ -175,8 +190,8 @@ body {
 }
 
 .biography-img-container img {
-  /* width: 100%; */
-  /* margin-left: 20px; */
+  width: 88%;
+
 }
 
 .biography-text-container {
@@ -206,8 +221,9 @@ body {
   font-family: var(--biography-description-font-family);
 }
 
-/* Experience section */
 
+
+/* Experience section */
 
 .experience-main-text-box {
   width: 35%;
@@ -243,59 +259,64 @@ body {
   padding-bottom: 60px;
 }
 
-.rotated-container {
+.achievement-title {
   position: absolute;
-  width: 50%;
-  transform: translate(20%, 45%);
-  height: auto !important;
-}
-
-.rotated-container h3 {
-  writing-mode: vertical-lr;
-  display: inline;
-  /* padding: 15px; */
-  transform: rotate(180deg);
-  border-left: 2px solid black;
+  transform: rotate(-90deg);
+  top: 43%;
+  right: 80%;
+  border-bottom: 3px solid black;
+  margin-right: 50px;
   font-size: var(--achieve-title-font-size);
   font-family: var(--achieve-font-familiy);
   color: var(--achieve-font-color);
 }
 
-.rotated-container ul {
-  display: inline;
-  position: absolute;
-  top: 10%;
-
-  text-align: justify;
-  /* margin-left: 25px; */
+.achievement-item {
   font-size: var(--achieve-description-font-size);
-  font-family: var(--achieve-font-familiy);
   color: var(--achieve-font-color);
+  font-family: var(--achieve-font-familiy);
 }
 
+.achievement-text-container {
+  margin-left: 200px;
+  margin-top: 100px;
+}
 
-/* .chamber-container{
-  background-color: var(--banner-backgroundr);
-} */
+.achievement-image-container img {
+  width: 60%;
+}
+
 
 .hospital-name {
   font-size: var(--chamber-hospital-name-font-size);
   color: var(--chamber-hospital-name-font-color);
   font-family: var(--chamber-hospital-name-font-family);
 }
-.time{
+
+.time {
   font-size: var(--chamber-time-font-size);
   font-family: var(--chamber-time-font-family);
   color: var(--chamber-time-font-color);
 }
 
-.chamber-details-title{
+.chamber-details-title {
   font-size: var(--chamber-title-font-size);
   font-family: var(--chamber-time-font-family);
   color: var(--chamber-title-font-color);
 }
 
 @media only screen and (max-width: 768px) {
+
+  hr {
+    height: 3px;
+    width: 35%;
+    margin: 0px auto;
+    border-width: 0;
+    color: #424042;
+    background-color: #424042;
+  }
+
+
   /* APPOINTMET-S
   ECTION  MEDIA QUERY*/
 
@@ -324,9 +345,6 @@ body {
 
   .mobile-icon {
     width: 22px;
-    /* border: 2px solid red; */
-    /* margin-bottom: 10px; */
-    /* margin-left: 10px; */
     margin: auto 0;
     color: var(--mobile-icon-color);
   }
@@ -344,4 +362,149 @@ body {
     font-size: 14px;
     font-family: var(--mobile-text-font-family);
   }
+
+
+  /* Header Banner Section  */
+  .header-banner {
+    background-color: var(--banner-backgroundr);
+    padding-top: 10px;
+    margin-top: 53px;
+  }
+
+  .prof-title {
+    font-size: var(--prof-title-font-size);
+    font-family: var(--prof-title-font-family);
+    color: var(--prof-title-color);
+    line-height: 30px;
+  }
+
+  .doctor-name {
+    font-family: var(--doctor-name-font-family);
+    color: var(--doctor-name-color);
+    font-size: var(--doctor-name-font-size);
+  }
+
+  .doctor-description {
+    font-family: var(--doctor-description-font-family);
+    font-size: var(--doctor-description-font-size);
+    color: var(--doctor-description-font-color);
+    line-height: 1.5px;
+    text-align: justify;
+    text-justify: inter-word;
+
+  }
+
+  .banner-text-container {
+    width: 100vw !important;
+    margin-top: 25px !important;
+  }
+
+  .banner-text-container-2 {
+    width: 100vw !important;
+  }
+
+  .banner-icon {
+    margin: 40px 0;
+  }
+
+  /* Biography section */
+  .biography-container {
+    overflow-x: hidden;
+  }
+
+  .biography-img-container {
+    background-color: var(--biography-image-background);
+    padding-top: 40px;
+    order: 1;
+  }
+
+  .biography-text-container {
+    background-color: var(--biography-description-background-color);
+    order: 2;
+    padding: 20px 0px;
+  }
+
+  .education-text-container h2 {
+    font-size: var(--biography-title-font-size);
+    color: var(--biography-title-font-color);
+    font-family: var(--biography-description-font-family);
+  }
+
+  .education-text-container ul {
+    font-size: var(--biography-description-font-size);
+    font-family: var(--biography-description-font-family);
+
+  }
+
+  .biography-text-container h2 {
+    font-size: var(--biography-title-font-size);
+    color: var(--biography-title-font-color);
+    font-family: var(--biography-description-font-family);
+  }
+
+  .biography-text-container p {
+    font-size: var(--biography-description-font-size);
+    font-family: var(--biography-description-font-family);
+  }
+
+
+  /* Experience section */
+  .experience-main-text-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .experience-main-text-box h2 {
+    font-size: var(--exp-title-font-size);
+    font-family: var(--exp-title-font-family);
+    color: var(--exp-title-font-color);
+
+  }
+
+  .experience-text-box {
+    line-height: 13px;
+  }
+
+  .experience-text-box h4 {
+    font-size: var(--exp-description-title-font-size);
+    font-family: var(--exp-title-font-family);
+    color: var(--exp-title-font-color);
+  }
+
+  .experience-text-box p {
+    font-size: var(--exp-description-font-size);
+    font-family: var(--exp-description-font-family);
+    color: var(--exp-description-font-color);
+  }
+
+  /* ACIEVEMENT-SECTION */
+  .achievement-title {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 63%;
+    left: 5%;
+    border-bottom: none;
+  }
+
+  .achievement-text-container {
+    margin-left: 0px;
+    padding: 25px 0px;
+    margin-top: 0px;
+
+  }
+
+  .achievement-text-container-1 {
+    order: 2;
+  }
+
+  .achievement-image-container {
+    order: 1;
+  }
+
+  .achievement-image-container img {
+    width: 60%;
+    margin-left: 80px;
+
+  }
+
 }
