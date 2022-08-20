@@ -264,7 +264,7 @@ hr {
   transform: rotate(-90deg);
   top: 43%;
   right: 80%;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #424042;
   margin-right: 50px;
   font-size: var(--achieve-title-font-size);
   font-family: var(--achieve-font-familiy);
